@@ -1,6 +1,6 @@
 #import "SVGKParserDefsAndUse.h"
 
-#import "Node.h"
+#import "SVGNode.h"
 #import "SVGKSource.h"
 #import "SVGKParseResult.h"
 

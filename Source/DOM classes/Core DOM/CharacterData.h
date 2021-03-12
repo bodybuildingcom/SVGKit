@@ -31,7 +31,7 @@
 #import <Foundation/Foundation.h>
 
 /** objc won't allow this: @class Node;*/
-#import "Node.h"
+#import "SVGNode.h"
 
 @interface CharacterData : Node
 

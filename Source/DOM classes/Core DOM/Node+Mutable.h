@@ -1,7 +1,7 @@
 /**
  Makes the writable properties all package-private, effectively
  */
-#import "Node.h"
+#import "SVGNode.h"
 
 @interface Node()
 @property(nonatomic,strong,readwrite) NSString* nodeName;
