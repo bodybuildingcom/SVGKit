@@ -19,7 +19,7 @@
 #import "SVGNode.h"
 @class Element;
 
-@interface Attr : Node
+@interface Attr : SVGNode
 
 /*! NB: The official DOM spec FAILS TO SPECIFY what the value of "name" is */
 @property(nonatomic,strong,readonly) NSString* name;

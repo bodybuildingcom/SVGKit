@@ -33,7 +33,7 @@
 /** objc won't allow this: @class Node;*/
 #import "SVGNode.h"
 
-@interface CharacterData : Node
+@interface CharacterData : SVGNode
 
 @property(nonatomic,strong,readonly) NSString* data;
 	

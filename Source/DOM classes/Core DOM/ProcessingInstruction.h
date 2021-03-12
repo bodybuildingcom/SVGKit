@@ -16,7 +16,7 @@
 /** objc won't allow this: @class Node;*/
 #import "SVGNode.h"
 
-@interface ProcessingInstruction : Node
+@interface ProcessingInstruction : SVGNode
 @property(nonatomic,strong,readonly) NSString* target;
 @property(nonatomic,strong,readonly) NSString* data;
 

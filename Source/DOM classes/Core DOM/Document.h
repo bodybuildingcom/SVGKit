@@ -75,7 +75,7 @@
 @class AppleSucksDOMImplementation;
 #import "AppleSucksDOMImplementation.h"
 
-@interface Document : Node
+@interface Document : SVGNode
 
 @property(nonatomic,strong,readonly) DocumentType*     doctype;
 @property(nonatomic,strong,readonly) AppleSucksDOMImplementation*  implementation;

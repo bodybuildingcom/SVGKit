@@ -116,9 +116,9 @@ typedef enum DOMNodeType
 // Modified in DOM Level 2:
 @property(nonatomic,weak,readonly) Document* ownerDocument;
 
--(SVGNode*) insertBefore:(SVGNode*) newChild refChild:(Node*) refChild;
+-(SVGNode*) insertBefore:(SVGNode*) newChild refChild:(SVGNode*) refChild;
 
--(SVGNode*) replaceChild:(SVGNode*) newChild oldChild:(Node*) oldChild;
+-(SVGNode*) replaceChild:(SVGNode*) newChild oldChild:(SVGNode*) oldChild;
 -(SVGNode*) removeChild:(SVGNode*) oldChild;
 -(SVGNode*) appendChild:(SVGNode*) newChild;
 

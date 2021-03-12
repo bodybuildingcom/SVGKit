@@ -12,6 +12,6 @@
 /** objc won't allow this: @class Node;*/
 #import "SVGNode.h"
 
-@interface DocumentFragment : Node
+@interface DocumentFragment : SVGNode
 
 @end

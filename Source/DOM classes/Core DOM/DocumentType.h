@@ -20,7 +20,7 @@
 #import "SVGNode.h"
 #import "NamedNodeMap.h"
 
-@interface DocumentType : Node
+@interface DocumentType : SVGNode
 
 @property(nonatomic,strong,readonly) NSString* name;
 @property(nonatomic,strong,readonly) NamedNodeMap* entities;
