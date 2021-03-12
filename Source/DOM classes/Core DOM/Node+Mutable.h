@@ -8,7 +8,7 @@
 @property(nonatomic,strong,readwrite) NSString* nodeValue;
 
 @property(nonatomic,readwrite) DOMNodeType nodeType;
-@property(nonatomic,weak,readwrite) Node* parentNode;
+@property(nonatomic,weak,readwrite) SVGNode* parentNode;
 @property(nonatomic,strong,readwrite) NodeList* childNodes;
 @property(nonatomic,strong,readwrite) NamedNodeMap* attributes;
 

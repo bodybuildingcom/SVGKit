@@ -99,28 +99,28 @@ typedef enum DOMNodeType
 	DOMNodeType_NOTATION_NODE                  = 12
 } DOMNodeType;
 
-@interface Node : NSObject
+@interface SVGNode : NSObject
 
 @property(nonatomic,strong,readonly) NSString* nodeName;
 @property(nonatomic,strong,readonly) NSString* nodeValue;
 	
 @property(nonatomic,readonly) DOMNodeType nodeType;
-@property(nonatomic,weak,readonly) Node* parentNode;
+@property(nonatomic,weak,readonly) SVGNode* parentNode;
 @property(nonatomic,strong,readonly) NodeList* childNodes;
-@property(nonatomic,weak,readonly) Node* firstChild;
-@property(nonatomic,weak,readonly) Node* lastChild;
-@property(nonatomic,weak,readonly) Node* previousSibling;
-@property(nonatomic,weak,readonly) Node* nextSibling;
+@property(nonatomic,weak,readonly) SVGNode* firstChild;
+@property(nonatomic,weak,readonly) SVGNode* lastChild;
+@property(nonatomic,weak,readonly) SVGNode* previousSibling;
+@property(nonatomic,weak,readonly) SVGNode* nextSibling;
 @property(nonatomic,strong,readonly) NamedNodeMap* attributes; /**< NB: according to DOM Spec, this is null if the Node is NOT subclassed as an Element */
 
 // Modified in DOM Level 2:
 @property(nonatomic,weak,readonly) Document* ownerDocument;
 
--(Node*) insertBefore:(Node*) newChild refChild:(Node*) refChild;
+-(SVGNode*) insertBefore:(Node*) newChild refChild:(Node*) refChild;
 
--(Node*) replaceChild:(Node*) newChild oldChild:(Node*) oldChild;
--(Node*) removeChild:(Node*) oldChild;
--(Node*) appendChild:(Node*) newChild;
+-(SVGNode*) replaceChild:(Node*) newChild oldChild:(Node*) oldChild;
+-(SVGNode*) removeChild:(Node*) oldChild;
+-(SVGNode*) appendChild:(Node*) newChild;
 
 @property(nonatomic) BOOL hasChildNodes;
 

@@ -20,10 +20,10 @@
 /*! This useful method provides both the DOM level 1 and the DOM level 2 implementations of searching the tree for a node - because THEY ARE DIFFERENT
  yet very similar
  */
-+(void) privateGetElementsByName:(NSString*) name inNamespace:(NSString*) namespaceURI childrenOfElement:(Node*) parent addToList:(NodeList*) accumulator;
++(void) privateGetElementsByName:(NSString*) name inNamespace:(NSString*) namespaceURI childrenOfElement:(SVGNode*) parent addToList:(NodeList*) accumulator;
 
 /*! This is used in multiple base classes in DOM 1 and DOM 2 where they do NOT have shared superclasses, so we have to implement it here in a separate
  clas as a standalone method */
-+(Element*) privateGetElementById:(NSString*) idValue childrenOfElement:(Node*) parent;
++(Element*) privateGetElementById:(NSString*) idValue childrenOfElement:(SVGNode*) parent;
 
 @end

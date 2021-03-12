@@ -15,7 +15,7 @@
 }
 
 
--(Node*) item:(NSUInteger) index
+-(SVGNode*) item:(NSUInteger) index
 {
 	return [self.internalArray objectAtIndex:index];
 }

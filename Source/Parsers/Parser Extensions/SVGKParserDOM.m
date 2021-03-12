@@ -20,7 +20,7 @@
 	return [NSMutableArray array];
 }
 
-- (Node*) handleStartElement:(NSString *)name document:(SVGKSource*) SVGKSource namePrefix:(NSString*)prefix namespaceURI:(NSString*) XMLNSURI attributes:(NSMutableDictionary *)attributeObjects parseResult:(SVGKParseResult *)parseResult parentNode:(Node*) parentNode
+- (SVGNode*) handleStartElement:(NSString *)name document:(SVGKSource*) SVGKSource namePrefix:(NSString*)prefix namespaceURI:(NSString*) XMLNSURI attributes:(NSMutableDictionary *)attributeObjects parseResult:(SVGKParseResult *)parseResult parentNode:(SVGNode*) parentNode
 {
 	if( [[self supportedNamespaces] count] == 0
 	|| [[self supportedNamespaces] containsObject:XMLNSURI] ) // unnecesary here, but allows safe updates to this parser's matching later
@@ -37,7 +37,7 @@
 	return nil;
 }
 
--(void)handleEndElement:(Node *)newNode document:(SVGKSource *)document parseResult:(SVGKParseResult *)parseResult
+-(void)handleEndElement:(SVGNode *)newNode document:(SVGKSource *)document parseResult:(SVGKParseResult *)parseResult
 {
 	
 }
@@ -49,7 +49,7 @@
  
  Instead, text-handling, and creation of text nodes, MUST be hard-coded into the SVGKParser core parser :(
  
--(BOOL) createdNodeShouldStoreContent:(Node*) item
+-(BOOL) createdNodeShouldStoreContent:(SVGNode*) item
 {
 	switch( item.nodeType )
 	{
@@ -75,7 +75,7 @@
 	}
 }
 
--(void) handleStringContent:(NSMutableString*) content forNode:(Node*) node parseResult:(SVGKParseResult *)parseResult
+-(void) handleStringContent:(NSMutableString*) content forNode:(SVGNode*) node parseResult:(SVGKParseResult *)parseResult
 {
 	switch( node.nodeType )
 	{

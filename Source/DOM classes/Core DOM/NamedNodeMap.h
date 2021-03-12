@@ -32,24 +32,24 @@
 
 @interface NamedNodeMap : NSObject </** needed so we can output SVG text in the [Node appendToXML:..] methods */ NSCopying>
 
--(Node*) getNamedItem:(NSString*) name;
--(Node*) setNamedItem:(Node*) arg;
--(Node*) removeNamedItem:(NSString*) name;
--(Node*) item:(unsigned long) index;
+-(SVGNode*) getNamedItem:(NSString*) name;
+-(SVGNode*) setNamedItem:(SVGNode*) arg;
+-(SVGNode*) removeNamedItem:(NSString*) name;
+-(SVGNode*) item:(unsigned long) index;
 
 @property(readonly) unsigned long length;
 
 // Introduced in DOM Level 2:
--(Node*) getNamedItemNS:(NSString*) namespaceURI localName:(NSString*) localName;
+-(SVGNode*) getNamedItemNS:(NSString*) namespaceURI localName:(NSString*) localName;
 
 // Introduced in DOM Level 2:
--(Node*) setNamedItemNS:(Node*) arg;
+-(SVGNode*) setNamedItemNS:(SVGNode*) arg;
 
 // Introduced in DOM Level 2:
--(Node*) removeNamedItemNS:(NSString*) namespaceURI localName:(NSString*) localName;
+-(SVGNode*) removeNamedItemNS:(NSString*) namespaceURI localName:(NSString*) localName;
 
 #pragma mark - MISSING METHOD FROM SVG Spec, without which you cannot parse documents (don't understand how they intended you to fulfil the spec without this method)
 
--(Node*) setNamedItemNS:(Node*) arg inNodeNamespace:(NSString*) nodesNamespace;
+-(SVGNode*) setNamedItemNS:(SVGNode*) arg inNodeNamespace:(NSString*) nodesNamespace;
 
 @end

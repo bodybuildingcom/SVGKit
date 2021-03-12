@@ -23,6 +23,6 @@
 
 @property(readonly) NSUInteger length;
 
--(Node*) item:(NSUInteger) index;
+-(SVGNode*) item:(NSUInteger) index;
 
 @end

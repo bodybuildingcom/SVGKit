@@ -94,7 +94,7 @@
 -(NodeList*) getElementsByTagName:(NSString*) data;
 
 // Introduced in DOM Level 2:
--(Node*) importNode:(Node*) importedNode deep:(BOOL) deep;
+-(SVGNode*) importNode:(SVGNode*) importedNode deep:(BOOL) deep;
 
 // Introduced in DOM Level 2:
 -(Element*) createElementNS:(NSString*) namespaceURI qualifiedName:(NSString*) qualifiedName __attribute__((ns_returns_retained));
