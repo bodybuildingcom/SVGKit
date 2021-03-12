@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version     = '2.1.0'
   s.license     = 'MIT'
   s.osx.deployment_target = '10.9'
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '13.0'
   s.tvos.deployment_target = '9.0'
   s.summary     = "Display and interact with SVG Images on iOS, using native rendering (CoreAnimation)."
   s.homepage = 'https://github.com/SVGKit/SVGKit'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                  'Eric Man'        => 'meric.au@gmail.com',
                  'Matt Rajca'      => 'matt.rajca@me.com',
                  'Moritz Pfeiffer' => 'moritz.pfeiffer@alp-phone.ch' }
-  s.source   = { :git => 'https://github.com/SVGKit/SVGKit.git', :tag => s.version.to_s }
+  s.source   = { :git => 'git@github.com:bodybuildingcom/SVGKit.git', :tag => s.version.to_s }
 
   s.source_files = 'Source/*.{h,m}', 'Source/**/*.{h,m}'
   s.exclude_files = 'Source/include/*.h'
