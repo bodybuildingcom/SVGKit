@@ -32,4 +32,4 @@ SVGKDefine define some common macro used for private header.
 //#define NSStringFromCGPoint(point) NSStringFromPoint(point)
 //#endif
 //
-//#endif /* SVGKDefine_Private_h */
+#endif /* SVGKDefine_Private_h */
