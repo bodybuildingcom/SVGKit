@@ -3,7 +3,7 @@
  */
 #import "SVGNode.h"
 
-@interface Node()
+@interface SVGNode()
 @property(nonatomic,strong,readwrite) NSString* nodeName;
 @property(nonatomic,strong,readwrite) NSString* nodeValue;
 
