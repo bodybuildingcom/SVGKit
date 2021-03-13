@@ -91,7 +91,7 @@ CGImageRef SVGImageCGImage(UIImage *img)
             NSError *error = nil;
             imageData = [NSData dataWithContentsOfStream:stream initialCapacity:NSUIntegerMax error:&error];
             if( error )
-                // SVGKitLogError(@"[%@] ERROR: unable to read stream from %@ into NSData: %@", [self class], _href, error);
+                NSLog(@"[%@] ERROR: unable to read stream from %@ into NSData: %@", [self class], _href, error);
         } else {
             // SVGKitLogError(@"[%@] ERROR: unable to load the source from URL: %@", [self class], _href);
         }
