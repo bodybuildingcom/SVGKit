@@ -13,7 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class Node;
+@class SVGNode;
 @class MediaList;
 
 @interface StyleSheet : NSObject
